@@ -91,7 +91,7 @@ para[0].innerHTML ="hey";*/
 
 }*/
 
-let isShow = true
+/*let isShow = true
 const myFun = () => {
 
     let display = document.getElementById("display")
@@ -104,7 +104,45 @@ const myFun = () => {
         display.src = "https://tse4.mm.bing.net/th/id/OIP.ubwBIfs0I_XeI62cmaBONAHaE8?pid=Api&P=0&h=180"
         isShow = !isShow
     }
+}*/
+
+/*const add = () => {
+    event.preventDefault()
+    let val1 = Number(document.getElementById("value1").value);
+    let val2 = Number(document.getElementById("value2").value);
+    let display = document.getElementById("display")
+
+    display.innerHTML = `the sum of ${val1} and ${val2} is ${val1 + val2}`
 }
+const sub = () => {
+    event.preventDefault()
+    let val1 = Number(document.getElementById("value1").value);
+    let val2 = Number(document.getElementById("value2").value);
+    let display = document.getElementById("display")
+    display.innerHTML = `the diff of ${val1} and ${val2} is ${val1 - val2}`
+}
+const multi = () => {
+    event.preventDefault()
+    let val1 = Number(document.getElementById("value1").value);
+    let val2 = Number(document.getElementById("value2").value);
+    let display = document.getElementById("display")
+    display.innerHTML = `the multi of ${val1} and ${val2} is ${val1 * val2}`
+}*/
+
+const changeColor = () => {
+    let display = document.getElementById("display")
+    let color = "#"
+    let colorCodes = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f' ]
+
+    for(let i=0; i<6; i++){
+        let randomo = Math.floor(Math.random()*16)
+        color += colorCodes[randomo]
+
+        display.style.backgroundColor =color
+    }
+}
+
+changeColor()
 
 
 
